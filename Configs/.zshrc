@@ -135,12 +135,5 @@ source $HOME/.sh_aliases
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
 fi
-# ALIASES TO USE IN 42
-alias norm='norminette -R CheckForbiddenSourceHeader'
-alias norm-ft='norm '
-alias normclangrun='norminette -R CheckForbiddenSourceHeader && clang -Wall -Wextra -Werror *.c && ./a.out'
-alias clangp='clang -Wall -Wextra -Werror'
-alias clangall='clangp *.c'
-alias a='./a.out'
-alias ls-ft='find  -type f -name "ft_*.c" -print'
-alias clangtest='clangp ""/ft_*.c ""/"".c'
+
+# Aliases
